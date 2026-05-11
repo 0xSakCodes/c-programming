@@ -7,8 +7,13 @@ by - 0xSakCodes :)
 ## Usage:
 <br>
 Compile: [After Installation]
-``` gcc .\basicPrograms/program1.c ```
+```shell
+gcc .\basicPrograms/program1.c
+```
 <br>
 A `a.exe` file is created after successful compilation (windows); <br>
-To run: ``` ./a.exe ```
+To run: 
+```shell
+./a.exe 
+```
 <hr>
