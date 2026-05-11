@@ -31,7 +31,7 @@ int main() {
         // looping again till the number of times to check divisibility by other numbers;
         int j = 2;
         // loop till j is smaller than the number;
-        while (j < i){
+        while (j < i && j != i){
             // expected: (values of j)
             // 2; 2,3; 2,3,4; 2,3,4,5; 2,3,4,5,6; 2,3,4,5,6,7; 2,3,4,5,6,7,8; 2,3,4,5,6,7,8,9;
             if (i % j == 0) {
@@ -44,7 +44,7 @@ int main() {
              }
             // increase the value of j;
             // printf("%d", j);
-            j++;
+            ++j;
         }
 
         // if it doesnt breaks: checks for the number;
