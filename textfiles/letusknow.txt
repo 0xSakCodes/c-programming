@@ -1,0 +1,51 @@
+&& AND (conditions):
+1       2   |   Output
+T       T   |   T 
+T       F   |   F
+F       T   |   F
+F       F   |   F
+
+-----------------------
+
+|| OR (conditions):
+1       2   |   Output
+T       T   |   T 
+T       F   |   T 
+F       T   |   T 
+F       F   |   F
+
+-----------------------
+
+Priority        |       Operator
+1               |       ! (not operator)
+2               |       *, /, % (arithmetic operator)
+3               |       +,- 
+4               |       <, <=, >, >= (relational operator)
+5               |       ==, != 
+6               |       && {logical operator} (and)
+7               |       || {logical operator} (or)
+8               |       = (assignment)
+
+AKA -> {NOT > ARITHMETIC > RELATIONAL > LOGICAL > ASSIGNMENT}
+
+-----------------------
+
+ASSIGNMENT OPERATOR 
+
+= , += , -= , *= , /= , %= 
+
+-----------------------
+
+if there is single line output for if-else statement we use ternary operator:
+
+>> conditions ? result-if-true : result-if-false;
+>> age >= 18 ? printf("adult \n") : printf("child \n");
+
+(it is similar to):
+if ( age >= 18 ){
+    printf("adult \n");
+} else {
+    printf("child \n");
+}
+
+-----------------------
