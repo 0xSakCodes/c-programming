@@ -29,6 +29,6 @@ int enterNumber() {
 
 int findSquare(int num) {
     int squaredNum;
-    squaredNum = pow(num, num);
+    squaredNum = pow(num, 2);
     return squaredNum;
 }
