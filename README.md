@@ -1,4 +1,5 @@
 # C-Programming :)
 <hr>
-by - 0xSakCodes
+a repository for c (code files) & git-bash; <br>
+by - 0xSakCodes :)
 <hr>
