@@ -1,4 +1,4 @@
-// WAP (function) tp convert celcius to fahrenheit;
+// WAP (function) tp convert celsius to fahrenheit;
 // f = (celcius * 9/5) + 32;
 /// (12/05/2026) {0xSakCodes}
 
@@ -10,15 +10,15 @@ float celToFahrenheit(float cel);
 
 // main function:
 int main() {
-    // varaible to store celcius user input
+    // varaible to store celsius user input
     float cel;
 
     // take user input;
-    printf("enter celcius: ");
+    printf("enter celsius: ");
     scanf("%f", &cel);
 
     // call function:
-    printf("%f celcius -> %f fahrenheit\n",cel, celToFahrenheit(cel));
+    printf("%f celsius -> %f fahrenheit\n",cel, celToFahrenheit(cel));
     return 0;
 }
 
