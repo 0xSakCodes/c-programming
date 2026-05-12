@@ -2,10 +2,6 @@
 // WAP (function) to find square root of a number;
 /// (12/05/2026) {0xSakCodes}
 
-
-// WAP (function) to print Hot or Cold depending upon the temprature the user enters;
-// WAP (function) to make your own power function;
-
 #include <stdio.h>
 
 // user defined function declaration
