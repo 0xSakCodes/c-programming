@@ -8,6 +8,8 @@ int main() {
     // * -> value at;
     // & -> address of;
     int *pointer = &age;
+    // therefore: pointer has stored -> address of age;
+    /// and (*) asks for value adress at pointer (which is of age);
     printf("address of age: %d\n", pointer);
 
     printf("value of pointer: %d", *pointer);
