@@ -14,29 +14,28 @@ jobs:
     - name: Checkout repository code
       uses: actions/checkout@v4
 
-    - name: Setup MSYS2 and MinGW Toolchain
-      uses: msys2/setup-msys2@v2
+    - name: Set up Quick MinGW and Make Toolchain
+      uses: egor-tisin/setup-gcc@v1
       with:
-        msystem: MINGW64
-        update: true
-        install: >-
-          mingw-w64-x86_64-gcc
-          mingw-w64-x86_64-make
+        version: latest
+        platform: x64
 
     - name: Compile Code Base with Make
-      shell: msys2 {0}
+      shell: bash
       run: |
+        # Use mingw32-make only if your target handles 'clean', otherwise skip it
         mingw32-make clean || true
         mingw32-make
 
     - name: Verify Executable Presence
+      shell: bash
       run: |
-        if (Test-Path "a.exe") {
+        if [ -f "a.exe" ]; then
           echo "Success: a.exe successfully generated."
-        } else {
+        else
           echo "Error: a.exe was not found in the root directory."
           exit 1
-        }
+        fi
 
     - name: Upload Compiled Binary
       uses: actions/upload-artifact@v4
@@ -44,4 +43,3 @@ jobs:
         name: production-binary-windows
         path: a.exe
         retention-days: 7
-        
