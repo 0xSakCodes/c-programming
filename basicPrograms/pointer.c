@@ -8,7 +8,7 @@ int main() {
     // * -> value at;
     // & -> address of;
     // %p -> pointer address; (hexadecimal) %u -> unsigned int (pointer address);
-    int *pointer = &age;
+    int *pointer = &age; // value at address of age;
     // therefore: pointer has stored -> address of age;
     /// and (*) asks for value adress at pointer (which is of age);
     printf("address of age: %p\n", pointer);
