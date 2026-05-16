@@ -1,7 +1,7 @@
 // WAP (function) to find maximum number between two number using pointer;
 /// (16/05/2026) {0xSakCodes}
 
-// WAP (function) to print elements of array in reverse order;
+
 // WAP (function) to print all the letters in english alphabet using pointer;
 
 #include <stdio.h>
