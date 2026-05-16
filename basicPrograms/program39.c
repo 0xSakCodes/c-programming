@@ -4,7 +4,6 @@
 
 #include <stdio.h>
 
-void printArrayInReverse(int maxLength);
 
 // main function
 int main() {
@@ -22,8 +21,4 @@ int main() {
         printf(">> value at %d index: %d\n", i, marks[i]);
     }
     return 0;
-}
-
-void printArrayInReverse(int maxLength) {
-    
 }
