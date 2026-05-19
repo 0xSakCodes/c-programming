@@ -3,6 +3,9 @@
 
 #include <stdio.h>
 
+// user defined function declaration
+void printCost(float *arr, int number);
+
 // main function:
 int main() {
     float price[3];
@@ -14,8 +17,16 @@ int main() {
         cost = cost * 0.18 + cost;
 
         price[i] = cost;
-        printf("+GST >> %f\n", price[i]);
     }
+
+    printCost(price, 3);
     
     return 0;
+}
+
+// defining function:
+void printCost(float *arr, int number) {
+    for (int i=0; i<number; i++){
+        printf("Cost + GST >> %f\n", arr[i]);
+    }
 }
