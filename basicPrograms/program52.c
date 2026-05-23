@@ -6,7 +6,7 @@
 
 // user defined function declaration
 void takeInput(char string[]);
-void concatinateString(char string1[], char string2[]);
+void concatenateString(char string1[], char string2[]);
 void printString(char string[]);
 
 // main function
@@ -17,7 +17,7 @@ int main() {
     takeInput(mainString);
     takeInput(secondString);
 
-    concatinateString(mainString, secondString);
+    concatenateString(mainString, secondString);
     printString(mainString);
     return 0;
 }
@@ -29,10 +29,10 @@ void takeInput(char string[]) {
     gets(string);
 }
 
-void concatinateString(char string1[], char string2[]) {
+void concatenateString(char string1[], char string2[]) {
     strcat(string1, string2);
     printf("\n----\t----\n");
-    printf("concatinated success! ;)");
+    printf("concatenated success! ;)");
     printf("\n----\t----\n");
 }
 
