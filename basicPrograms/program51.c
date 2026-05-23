@@ -7,6 +7,7 @@
 int main() {
     // via pointer;
     char fullName[25];
+    char newName[25];
     int length = 0;
 
     printf("enter full name:");
@@ -19,6 +20,8 @@ int main() {
     }
 
     // using library:
+    strcpy(newName, fullName); // copies context from 2nd string -> 1st string;
+    printf("%s \n\n", newName);
     printf("str length: %d\n", strlen(fullName));
     printf("length: %d", length-1);
     return 0;
