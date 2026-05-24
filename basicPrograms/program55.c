@@ -6,14 +6,16 @@
 
 // user defined function declaration:
 void passwordInput(char passwordStr[]);
-void saltThePassword(char oldPassword[]);
+void saltThePassword(char oldPassword[], char newPassword[]);
 
 int main() {
     // defining variables:
     char password[25];
+    char saltedPassword[25];
     passwordInput(password);
 
-    printf("salted password: %s", password);
+    saltThePassword(password, saltedPassword);
+    printf("main password: %s\nsalted password: %s", password, saltedPassword);
     return 0;
 }
 
@@ -21,12 +23,12 @@ int main() {
 void passwordInput(char passwordStr[]){
     printf("enter your password: ");
     gets(passwordStr);
-    // calling another function:
-    saltThePassword(passwordStr);
 }
 
-void saltThePassword(char oldPassword[]) {
+void saltThePassword(char oldPassword[], char newPassword[]) {
     char salt[] = "123";
-    // concatenates salt to password string;
-    strcat(oldPassword, salt);
+    // copies main password to new password
+    strcpy(newPassword, oldPassword); // 2nd -> 1st;
+    // concatenates salt to new password;
+    strcat(newPassword, salt);
 }
