@@ -37,12 +37,19 @@ char slice(char sliceString[], int startIndex, int endIndex) {
 
     /// starting slice:
     int i = startIndex;
+    /// assuming j to be index number for new string;
+    int j=0;
     char slicedString[33];
     for(i; i<=endIndex; i++){
         // printf("%c", sliceString[i]);
-        char toBeAdded = sliceString[i];
-        strncat(slicedString, &toBeAdded, 1);
 
+        // assigns the sliced value to new string;
+        slicedString[j] = sliceString[i];
+        j++;
+
+
+        // char toBeAdded = sliceString[i];
+        // strncat(slicedString, &toBeAdded, 1);       
     }
     printf("sliced string: %s", slicedString);
 }
