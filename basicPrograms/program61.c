@@ -30,9 +30,30 @@ int main() {
     }
 
     for (int j=0; j<3; j++){
+        // normal:
+        printf("\n\nNORMAL:\n");
         printf("student %d name: %s\n", (j+1), student[j].name);
         printf("student %d class: %d\n", (j+1), student[j].class);
         printf("student %d roll: %d\n", (j+1), student[j].rollNumber);
+        printf("---\t---");
+        
+
+        // pointer;
+        struct students *ptr;
+        // PTR -> ADDRESS OF STUDENT[J];
+        ptr = &student[j];
+        printf("\n\nPOINTERS: \n");
+        printf("student %d name: %s\n", (j+1), (*ptr).name);
+        printf("student %d class: %d\n", (j+1), (*ptr).class);
+        printf("student %d roll: %d\n", (j+1), (*ptr).rollNumber);
+        printf("---\t---");
+
+        // arrow;
+        printf("\n\nARROWS: \n");
+        printf("student %d name: %s\n", (j+1), ptr->name);
+        printf("student %d class: %d\n", (j+1), ptr->class);
+        printf("student %d roll: %d\n", (j+1), ptr->rollNumber);
+        printf("---\t---");
     }
     return 0;
 }
