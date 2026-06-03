@@ -41,14 +41,11 @@ void appendOnFile(char name[], int age, int rollNumber, int class) {
         | we can use multiple functions to write down the collected information;
         || fprintf(fileLoc, dataType, &variable) & fputs(); according to our needs;
         */
-        fputs(name, opened);
-        fputs("\n", opened);
-        fprintf(opened, "%d", age);
-        fputs("\n", opened);
-        fprintf(opened, "%d", rollNumber);
-        fputs("\n", opened);
-        fprintf(opened, "%d", class);
-        fputs("\n", opened);
+        // fputs(name, opened);
+        fprintf(opened, "name> %s\n", name);
+        fprintf(opened, "age> %d\n", age);
+        fprintf(opened, "roll> %d\n", rollNumber);
+        fprintf(opened, "class> %d\n", class);
     } else {
         printf("FILE: not found;");
     }
