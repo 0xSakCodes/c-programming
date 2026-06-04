@@ -1,0 +1,5 @@
+Hello World :)
+This is a ransom text
+By 0xSakCodes;)
+
+to run the codes and read the vowels in it:)));
