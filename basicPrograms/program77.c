@@ -13,6 +13,13 @@ void printPattern(int numOfRows) {
     ||| 1; *
     */
     for (int i=numOfRows; i>=1; i--){
+        /*
+        | j=1; j<=i;
+        || so, j will iterate and print number of stars as same as maxRows
+        ||| value of i: 3 -> 1,2,3; *,*,*;
+        ||| value of i: 2 -> 1,2; *,*;
+        ||| value of i: 1 -> 1; *;
+        */
         for (int j=1; j<=i; j++) {
             printf("*");
         }
