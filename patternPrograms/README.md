@@ -23,3 +23,4 @@ p5 = "program78.c"
 | pattern3.c  | Alphabet & Number Triangle |
 | pattern4.c  | Star Plus |
 | pattern5.c  | Hollow Rectangle |
+| pattern6.c  | Floyd's Triangle |
