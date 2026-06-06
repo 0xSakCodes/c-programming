@@ -48,6 +48,21 @@ int main() {
     printf("enter number of rows for odd pattern: ");
     scanf("%d", &nOfRows);
 
+    /*
+    for (int i=1; i<= nOfRows; i++) {
+        int num =1;
+        // 1,2,3...
+        for (int j=1; j<=i; j++) {
+            // 1..12...123...
+            printf("%d", num);
+            num = num + 2;
+        }
+        // 1..
+        // 13..
+        // 135..
+        printf("\n");
+    }
+    */
     printPattern(nOfRows);
     return 0;
 }
