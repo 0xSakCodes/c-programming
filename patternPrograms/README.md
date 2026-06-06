@@ -10,3 +10,7 @@ p5 = "program78.c"
 ```
 
 <hr>
+
+| **Program Name** | **Pattern Type** |
+| :---:        | :--:         |
+| pattern1.c   | Alphabet Square |
