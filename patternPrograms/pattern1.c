@@ -14,10 +14,16 @@ int main() {
     scanf("%d", &nOfRows);
 
     char a = 'A';
+    char z = 'Z';
 
     for (int i=1; i<=nOfRows; i++){
         // to find ascii value convert char to int;
         int asciiVal = (int) a;
+        if ((asciiVal-1) + nOfRows > (int) z) {
+            printf("ERROR: Programs exceeds alphabetical limits :(");
+            return 1;
+        }
+
         // ABC;
         for (int j=1; j<=nOfRows; j++) {
             printf("%c", asciiVal);
