@@ -12,5 +12,10 @@ p5 = "program78.c"
 <hr>
 
 | **Program Name** | **Pattern Type** |
-| :---:        | :--:         |
+| :---:        | :---:         |
+| program17.c | Special Character |
+| program75.c | Numerical Square |
+| program76.c | Stars Triangle |
+| program77.c | Reversed Stars Triangle |
+| program78.c | Odd Number Triangle |
 | pattern1.c   | Alphabet Square |
