@@ -18,4 +18,5 @@ p5 = "program78.c"
 | program76.c | Stars Triangle |
 | program77.c | Reversed Stars Triangle |
 | program78.c | Odd Number Triangle |
-| pattern1.c   | Alphabet Square |
+| pattern1.c  | Alphabet Square |
+| pattern2.c  | Alphabet Triangle | 
