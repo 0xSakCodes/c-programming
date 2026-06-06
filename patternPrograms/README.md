@@ -20,3 +20,4 @@ p5 = "program78.c"
 | program78.c | Odd Number Triangle |
 | pattern1.c  | Alphabet Square |
 | pattern2.c  | Alphabet Triangle | 
+| pattern3.c  | Alphabet & Number Triangle |
