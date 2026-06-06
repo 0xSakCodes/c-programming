@@ -21,3 +21,4 @@ p5 = "program78.c"
 | pattern1.c  | Alphabet Square |
 | pattern2.c  | Alphabet Triangle | 
 | pattern3.c  | Alphabet & Number Triangle |
+| pattern4.c  | Star Plus |
