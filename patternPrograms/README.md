@@ -24,3 +24,4 @@ p5 = "program78.c"
 | pattern4.c  | Star Plus |
 | pattern5.c  | Hollow Rectangle |
 | pattern6.c  | Floyd's Triangle |
+| pattern7.c  | Star Shaped X | 
